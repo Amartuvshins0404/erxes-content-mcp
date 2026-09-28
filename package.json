@@ -1,0 +1,42 @@
+{
+  "name": "erxes-content-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the erxes.io Content Hub — author Blogs, Docs, Guides, Handbooks, Roadmaps and Changelogs in Markdown",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "erxes-content-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepare": "tsc",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "js-yaml": "^4.1.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2",
+    "unified": "^11.0.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.19.43",
+    "@types/turndown": "^5.0.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
